@@ -8,27 +8,23 @@ namespace DigitalRoot
 {
     class Program
     {
-    }
-        static void DigitalRoot(string rootThis)
+        static void Main(string[] args)
         {
-            
-            
 
-            
-          
-        }
-        static void rootingFunc(string root)
-        {
-            var total = 0;
-            for (var i = 0; i < root.Length; i++)
-            {
-                var rootNumber = root[i].ToString();
-                var number = Convert.ToInt32(rootNumber);
-                total = total + number;
-            }
-            Console.WriteLine(total);
+            DigitalRoot("31337");
+            DigitalRoot("45734");
 
             Console.ReadKey();
         }
-    
+        static void DigitalRoot(string rootThis)
+        {
+            List<string> rootNumList = (rootThis).Split().ToList();
+            
+            while ()
+            {
+
+            }
+            
+        }
+    }
 }

@@ -18,18 +18,18 @@ namespace DigitalRoot
         }
         static void DigitalRoot(string rootThis)
         {
-            List<string> rootNumList = (rootThis).Split().ToList();
-            int finalRoot;
-            //while the sum is greater than 9
-            while (finalRoot > 9)
-            {
-                //continue to add each number together
-                
 
+            int rootSum = 0;
+            for (int i = 0; i < rootThis.Length; i++)
+            {
+                rootSum += int.Parse(rootThis[i].ToString());
+                
             }
-            //if the number is <= 9, print the number
-            Console.WriteLine(finalRoot);
-            
+            int input = rootSum.ToString().Sum(x => int.Parse(x.ToString()));
+
+            Console.WriteLine(input);
+
+          
         }
     }
 }

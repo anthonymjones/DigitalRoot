@@ -19,11 +19,16 @@ namespace DigitalRoot
         static void DigitalRoot(string rootThis)
         {
             List<string> rootNumList = (rootThis).Split().ToList();
-            
-            while ()
+            int finalRoot;
+            //while the sum is greater than 9
+            while (finalRoot > 9)
             {
+                //continue to add each number together
+                
 
             }
+            //if the number is <= 9, print the number
+            Console.WriteLine(finalRoot);
             
         }
     }
